@@ -19,6 +19,10 @@ body {
     width: 320px;
     height: 480px; /* ปรับความสูงเพิ่มให้พอเหมาะ */
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* จัดกลางในแนวตั้ง */
+    align-items: center; /* จัดกลางในแนวนอน */
     transition: transform 0.3s ease-in-out;
 }
 
