@@ -12,12 +12,12 @@ body {
 .container {
     text-align: center;
     background: #ffcccc;
-    padding: 40px;
+    padding: 40px 20px; /* เพิ่ม padding ด้านข้างให้มากขึ้น */
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ container ลึกขึ้น */
     position: relative;
     width: 320px;
-    height: 420px;
+    height: 480px; /* ปรับความสูงเพิ่มให้พอเหมาะ */
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
 }
@@ -45,7 +45,7 @@ body {
     background-color: #ff6666;
     color: white;
     left: 50%;
-    bottom: 15px;
+    bottom: 20px; /* ปรับตำแหน่งปุ่ม "Yes" */
     transform: translateX(-50%);
 }
 
@@ -53,12 +53,12 @@ body {
     background-color: #ff4444;
     color: white;
     left: 50%;
-    bottom: 70px;
+    bottom: 80px; /* ปรับตำแหน่งปุ่ม "No" */
     transform: translateX(-50%);
 }
 
 .yes:hover, .no:hover {
-    background-color: #ff1a1a; /* สีที่เปลี่ยนเมื่อ hover บนปุ่ม */
+    background-color: #ff1a1a;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* เพิ่มเงาให้ปุ่มเมื่อ hover */
 }
 
@@ -75,5 +75,5 @@ h2 {
     margin-bottom: 20px;
     color: #ff6666;
     font-family: 'Cookie', cursive;
-    letter-spacing: 2px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+    letter-spacing: 2px;
 }
