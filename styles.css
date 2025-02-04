@@ -4,30 +4,30 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #ffe6e6;
-    font-family: 'Cookie', cursive; /* เปลี่ยนฟอนต์ให้ดูหวานๆ */
+    font-family: 'Cookie', cursive;
     margin: 0;
-    background: linear-gradient(to right, #ffe6e6, #ffccff); /* เพิ่มพื้นหลัง gradient */
+    background: linear-gradient(to right, #ffe6e6, #ffccff);
 }
 
 .container {
     text-align: center;
     background: #ffcccc;
-    padding: 40px 20px; /* เพิ่ม padding ด้านข้างให้มากขึ้น */
+    padding: 40px 20px;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ container ลึกขึ้น */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     position: relative;
     width: 320px;
-    height: 480px; /* ปรับความสูงเพิ่มให้พอเหมาะ */
+    height: 480px; /* ปรับให้เหมาะสม */
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* จัดกลางในแนวตั้ง */
-    align-items: center; /* จัดกลางในแนวนอน */
+    justify-content: center; /* ใช้เพื่อจัดตำแหน่งให้อยู่กลาง */
+    align-items: center; /* ใช้เพื่อจัดตำแหน่งให้อยู่กลาง */
     transition: transform 0.3s ease-in-out;
 }
 
 .container:hover {
-    transform: scale(1.05); /* เพิ่มเอฟเฟ็กต์ขยายเมื่อเอาเมาส์ไปไว้บน container */
+    transform: scale(1.05);
 }
 
 .btn {
@@ -49,7 +49,7 @@ body {
     background-color: #ff6666;
     color: white;
     left: 50%;
-    bottom: 20px; /* ปรับตำแหน่งปุ่ม "Yes" */
+    bottom: 20px;
     transform: translateX(-50%);
 }
 
@@ -57,13 +57,13 @@ body {
     background-color: #ff4444;
     color: white;
     left: 50%;
-    bottom: 80px; /* ปรับตำแหน่งปุ่ม "No" */
+    bottom: 80px;
     transform: translateX(-50%);
 }
 
 .yes:hover, .no:hover {
     background-color: #ff1a1a;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* เพิ่มเงาให้ปุ่มเมื่อ hover */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
 }
 
 .cat-img {
@@ -71,13 +71,17 @@ body {
     height: auto;
     transition: opacity 0.3s ease-in-out;
     border-radius: 15px;
-    margin-bottom: 20px; /* เพิ่มระยะห่างจากข้อความ */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 60px; /* ปรับขนาดฟอนต์ให้ใหญ่ขึ้น */
     margin-bottom: 20px;
     color: #ff6666;
     font-family: 'Cookie', cursive;
     letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ข้อความ */
 }
+
