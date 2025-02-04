@@ -22,7 +22,11 @@ noButton.addEventListener('touchstart', () => {
     noButton.style.top = `${newY}px`;
 });
 
-// เมื่อกด "Yes" ให้เปลี่ยนรูปเป็นภาพ GIF ดีใจ
+// เมื่อกด "Yes" ให้เปลี่ยนรูปเป็นภาพ GIF ดีใจและซ่อนปุ่ม
 yesButton.addEventListener('click', () => {
     catImage.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWN0azMxZzRxc3F4cmtvcDFkZGRtNHAzeGx2bGF1aTNvN29kMzFiMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/UBl3wsQldC8dVbpFq5/giphy.gif"; // ใส่ภาพ GIF ดีใจ
+
+    // ซ่อนปุ่ม "Yes" และ "No"
+    yesButton.style.display = 'none';
+    noButton.style.display = 'none';
 });
